@@ -1,0 +1,62 @@
+body {
+    background-color: #fcfcfc;
+}
+.App {
+    padding: 100px;
+}
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.EDIT {
+    color: #333;
+    padding: 5px;
+    display: inline-block;
+    border:1px solid #eee;
+    position: relative;
+    &.FOCUS {
+        color: black;
+        background: #ccc;
+        &:before {
+            content: "save";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            margin-top: -9px;
+            left: 100%;
+            background: green;
+            color: white;
+        }
+    }
+    &:hover {
+        color: #333;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    &:before {
+        content: "edit";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        left: 100%;
+        background: purple;
+        color: white;
+    }
+}
